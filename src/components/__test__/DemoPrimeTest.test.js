@@ -7,7 +7,7 @@ describe('DemoPrimeTest Component', () => {
         render(<DemoPrimeTest />);
         
         // Find the button using data-testid
-        const button = screen.getByTestId('prime-button');
+        const button = screen.getByTestId('prime-butto');
         
         // Ensure the button is in the document
         expect(button).toBeInTheDocument();
