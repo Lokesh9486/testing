@@ -4,9 +4,7 @@ const Header = () => {
            <a href="/"><img src="/assets/images/react.png" alt="" /></a>
            <div className="">
             Header
-             
            </div>
-           
         </header>
   )
 }
