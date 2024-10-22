@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { PrimeReactProvider } from 'primereact/api';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Counter from './components/Counter';
+import Input from './components/Input';
+import Medallion from "./page/medallion";
+import "primereact/resources/themes/bootstrap4-light-blue/theme.css";
+import "./styles/style.scss";
+import Layout from './page/Layout';
+import DemoPrimeTest from './components/DemoPrimeTest';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( 
+    <PrimeReactProvider value={{
+      ripple: true}}>
+        <Counter></Counter>
+        <Input></Input>
+        <DemoPrimeTest></DemoPrimeTest>
+      {/* <BrowserRouter>
+         <Routes>
+           <Route path='/' element={<Layout/>} >
+           <Route index element={<Medallion/>} ></Route>
+           </Route>
+         </Routes>
+      </BrowserRouter> */}
+    </PrimeReactProvider>
   );
 }
 
