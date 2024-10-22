@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Button } from "primereact/button";
 import { Divider } from 'primereact/divider';
-import { Avatar } from 'primereact/avatar';
 
 const Counter = () => {
     const [count,setCount]=useState(0);
